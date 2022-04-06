@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+   html {
+    @apply scroll-smooth
+  }
+
+  body {
+    @apply bg-[#F3F7FF]
+  }
+}
+
+@layer components {
+
+  .btn {
+    @apply px-4 py-2 rounded-full
+  }
+
+  .heading {
+    @apply font-bold text-lg lg:text-[30px] lg:leading-[49px]
+  }
+
+  .paragraph {
+    @apply  text-[15px] leading-7 lg:text-lg
+  }
+
+  .container {
+    @apply px-4 sm:px-8 lg:px-16 xl:px-24 py-5 md:py-12 max-w-full
+  }
+}
+
+.btn-gradient {
+    background-image: linear-gradient(#fdc66e,#ff805e);
+}
+
+.header-bg {
+  background-image: url("/home/header-bg-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+}
+/* 1023 se neeche */
+@media (max-width: 1023px) {
+  .orange-pattern-bg {
+    background-image: url("/home/orange-pattern-bg.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.grid-reverse {
+  grid-row: 1;
+}
+
+
+.bg-leading {
+  background-image: url("/home/gaming-bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
