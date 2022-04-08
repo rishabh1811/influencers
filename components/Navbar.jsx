@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 import React from "react";
 import { HiOutlineMenuAlt2 } from "react-icons/hi"
 
@@ -13,11 +14,11 @@ export default function Navbar() {
 
           <nav className="hidden lg:block text-lg md:ml-auto md:mr-auto flex items-center justify-center">
             <a className="mr-8 hover:text-orange cursor-pointer">Home</a>
-            <a className="mr-8 hover:text-orange cursor-pointer">Services</a>
+            <a className="mr-8 hover:text-orange cursor-pointer" href="/services">Services</a>
             <a className="mr-8 hover:text-orange cursor-pointer">Influencers</a>
             <a className="mr-8 hover:text-orange cursor-pointer">On-Air Talents</a>
             <a className="mr-8 hover:text-orange cursor-pointer">Case Studies</a>
-            <a className="mr-8 hover:text-orange cursor-pointer">About Us</a>
+            <a className="mr-8 hover:text-orange cursor-pointer" href="/about">About Us</a>
             <a className="mr-8 hover:text-orange cursor-pointer">中文 (中国)</a>
           </nav>
 
