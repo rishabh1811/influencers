@@ -4,16 +4,18 @@ import React from "react";
 export default function Platforms() {
   return (
     <>
-      <div className="container text-center">
-        <h1 className="heading mb-[10px] md:mb-5">OUR PLATFORMS</h1>
-        <p className="paragraph">
-          With a complementarity between micro and macro-influencers and a
+      
+      <div className="container text-center mx-auto max-w-[1170px]">
+        <h1 className="text-lg font-montserrat text-[#404040] md:text-[40px] leading-relaxed font-bold mb-[10px] md:mb-5">OUR PLATFORMS</h1>
+        <p className="text-[15px] md:text-[22px] font-poppins text-[#404b68] leading-relaxed mb-[18px] lg:mb-24">
+        With a complementarity between micro and macro-influencers and a
           strategic target on each platform to hit the right target population
           you wish; we can fulfill your social media goals and establish a
           community instead of just take a typical UA approach.
         </p>
 
-        <div className="grid grid-cols-3 gap-4 mx-auto max-w-xs">
+        <div className="grid grid-cols-3 gap-4 mx-auto max-w-xs md:max-w-[100%] place-items-center md:gap-y-14 
+                        lg:grid-cols-6 lg:gap-x-4 ">
             <PlatformsCard />
             <PlatformsCard />
             <PlatformsCard />
@@ -21,7 +23,6 @@ export default function Platforms() {
             <PlatformsCard />
             <PlatformsCard />
         </div>
-
       </div>
     </>
   );
@@ -30,15 +31,20 @@ export default function Platforms() {
 function PlatformsCard(props) {
   return (
     <>
-      <div className="">
-        <img className="w-[87px]" src="/home/icons/ico-instagram.png" alt="" />
+    {/* Mobile version */}
+      <div className="lg:hidden">
+        <img className="w-[87px] md:w-[102px]" src="/home/icons/ico-instagram.png" alt="" />
       </div>
 
+        {/* Desktop Version */}
 
-      {/* <div className="bg-white rounded-[30px] py-8">
-        <h4 className="text-3xl font-bold text-[#316ad8]">200+</h4>
-        <p className="text-[19px] ">Campaigns</p>
-      </div> */}
+      <div className="hidden lg:block bg-white rounded-[30px] h-[160px] w-full py-8 counter-card relative">
+      <img className="w-[102px] absolute left-1/2 -translate-x-1/2 top-0 -translate-y-1/2" src="/home/icons/ico-instagram.png" alt="" />
+        
+        <p className="text-xl font-montserrat text-[#040e29] leading-relaxed absolute left-1/2 -translate-x-1/2 bottom-7">Instagram</p>
+      </div>
+
+      
     </>
   );
 }

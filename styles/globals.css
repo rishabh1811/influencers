@@ -27,7 +27,7 @@
   }
 
   .container {
-    @apply px-5 sm:px-8 lg:px-16 xl:px-24 py-5 md:py-12 max-w-full
+    @apply py-8 px-5 md:py-20 mx-auto 
   }
 }
 
@@ -53,6 +53,9 @@
   grid-row: 1;
 }
 
+.btn-gradient-shadow {
+  box-shadow:  0px 25px 55px rgb(238 112 8 / 49%) ;
+}
 
 .bg-leading {
   background-image: url("/home/gaming-bg.png");
@@ -60,3 +63,26 @@
   background-repeat: no-repeat;
   z-index: 1;
 }
+
+.btn-gradient-blue {
+    background-image: linear-gradient(54deg, #3786ed, #1eb5e4);
+}
+
+.counter::before {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background-color: #fe9c1a;
+  width: 38px;
+  height: 1px;
+  content: "";
+  margin: auto;
+}
+
+.counter-card::before {
+  
+  
+  
+}
+

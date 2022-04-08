@@ -6,7 +6,7 @@ import DigitalInfluencerMarketing from "../components/home/DigitalInfluencerMark
 import Esports from "../components/home/Esports";
 import Header from "../components/home/Header";
 import LeadingAgency from "../components/home/LeadingAgency";
-import ManagementForInfluencers from "../components/home/ManagementForInfluencers";
+import InfluencerManagement from "../components/home/InfluencerManagement";
 import NumbersSpeak from "../components/home/NumbersSpeak";
 import Platforms from "../components/home/Platforms";
 import Navbar from "../components/Navbar";
@@ -19,7 +19,7 @@ export default function Home() {
       <Header />
       <LeadingAgency />
       <DigitalInfluencerMarketing />
-      <ManagementForInfluencers />
+      <InfluencerManagement />
       <Esports />
       <NumbersSpeak />
       <Platforms />
