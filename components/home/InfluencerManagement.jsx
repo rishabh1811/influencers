@@ -8,7 +8,7 @@ export default function InfluencerManagement() {
         <div className="lg:grid lg:grid-cols-2">
           <div className="">
             <img
-              className="mx-auto"
+              className="mx-auto lg:w-[476px]"
               src="/home/management-img-mobile.png"
               alt=""
             />

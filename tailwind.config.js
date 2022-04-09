@@ -20,6 +20,14 @@ module.exports = {
       screens: {
         "992": "992px",
         "1392": "992px",
+      },
+
+      gridTemplateColumns: {
+        // Simple 16 column grid
+        '7logos': 'repeat(7, minmax(100px, 141px))',
+      },
+      animation: {
+        'spin-slow': 'spin 16s linear infinite',
       }
 
     },

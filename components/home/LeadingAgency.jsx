@@ -4,8 +4,10 @@ import React from "react";
 export default function LeadingAgency() {
   return (
     <>
-      <div className="container text-center max-w-[1100px] mx-auto relative lg:text-left">
+      <div className="container text-center max-w-[1100px] mx-auto lg:text-left relative">
         <img className="hidden lg:block" src="/home/gaming-bg.png" alt="" />
+        <img className="hidden lg:block absolute animate-spin-slow top-5 -z-10"  src="/objects/orange-square.png" alt=""  />
+        <img className="hidden lg:block absolute animate-spin-slow top-[120px] right-[90px]"  src="/objects/gaming-plus-icon.png" alt=""  />
 
         <div className="lg:grid lg:grid-cols-2 lg:gap-4 lg:absolute top-1/2 left-[120px] lg:-translate-y-1/2 max-w-[900px]  lg:text-white">
           <img
@@ -26,7 +28,7 @@ export default function LeadingAgency() {
               managers, and media buying specialists - will walk your firm step
               by step to achieve its goals and business objectives.
               <br />
-              <br />
+              
               This is made possible by identifying KPIs, goals, and other needs
               that may have slipped under your radar, we then pass it along to
               our growing network of influencers to implement, track and report

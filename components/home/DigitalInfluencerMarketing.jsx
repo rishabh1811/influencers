@@ -5,6 +5,7 @@ export default function DigitalInfluencerMarketing() {
   return (
     <>
       <div className="container text-center orange-pattern-bg max-w-[1070px] mx-auto relative lg:text-left">
+      <img className="absolute animate-spin-slow top-5 right-[-40px]"  src="/objects/orange-square.png" alt=""  />
         <img className="hidden lg:block" src="/home/content-box-3.png" alt="" />
 
         <div className="lg:grid lg:grid-cols-2 lg:absolute top-1/2 left-0 lg:-translate-y-1/2 max-w-[900px]">
